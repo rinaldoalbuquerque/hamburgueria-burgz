@@ -228,44 +228,96 @@
             </div>
         </div>
     </section>
-<!-- GALERIA -->
+    <!-- GALERIA -->
     <section class="galeria" id="galeria">
         <h2>Galeria</h2>
         <div class="galeria-grid">
-          <!-- Imagens da galeria -->
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/fachada-burgz.jpeg" alt="Pessoas no ambiente" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/ambiente-externo.jpg" alt="Pessoas no ambiente" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/ambiente-externo.jpg" alt=" ambiente externo do restaurante" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/garcon-servindo.jpg" alt=" agarçon servindo a mesa" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/homem-com-hamburguer.jpeg" alt="Pessoas no ambiente" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/clientes-burgz.jpeg" alt="Pessoas no ambiente" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/ambiente-com-pessoas.jpg" alt="Pessoas no ambiente" />
-          </div>
-          <div class="galeria-item">
-            <img src="img/imagens-galeria/hamburger-na-nesa.jpg" alt="hamburguer sobre a mesa" />
-          </div>
+            <!-- Imagens da galeria -->
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/fachada-burgz.jpeg" alt="Pessoas no ambiente" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/ambiente-externo.jpg" alt="Pessoas no ambiente" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/ambiente-externo.jpg" alt=" ambiente externo do restaurante" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/garcon-servindo.jpg" alt=" agarçon servindo a mesa" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/homem-com-hamburguer.jpeg" alt="Pessoas no ambiente" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/clientes-burgz.jpeg" alt="Pessoas no ambiente" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/ambiente-com-pessoas.jpg" alt="Pessoas no ambiente" />
+            </div>
+            <div class="galeria-item">
+                <img src="img/imagens-galeria/hamburger-na-nesa.jpg" alt="hamburguer sobre a mesa" />
+            </div>
         </div>
-      
+
         <!-- Lightbox -->
         <div class="lightbox" id="lightbox">
-          <img src="" alt="Imagem ampliada" />
+            <img src="" alt="Imagem ampliada" />
         </div>
-      </section>
-      
-      
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="avaliacoes" id="avaliacoes">
+        <h2>O que dizem nossos clientes</h2>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="avaliacao">
+                    <img src="img/clientes/lucas.jpeg" alt="Cliente 1" class="avatar" />
+                    <p class="comentario">"Melhor hambúrguer que já comi! Atendimento excelente."</p>
+                    <p class="nome">Lucas Silva</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="img/clientes/juliana.jpeg" alt="Cliente 2" class="avatar" />
+                    <p class="comentario">"Ambiente aconchegante e comida de qualidade."</p>
+                    <p class="nome">Juliana Costa</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="img/clientes/bruno.jpeg" alt="Cliente 3" class="avatar" />
+                    <p class="comentario">"Recomendo demais! Tudo perfeito."</p>
+                    <p class="nome">Bruno Lima</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="img/clientes/carla.jpeg" alt="Cliente 4" class="avatar" />
+                    <p class="comentario">"Os lanches são incríveis e super bem servidos."</p>
+                    <p class="nome">Carla Mendes</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="img/clientes/eduardo.jpeg" alt="Cliente 5" class="avatar" />
+                    <p class="comentario">"Já virou meu lugar favorito!"</p>
+                    <p class="nome">Eduardo Pereira</p>
+                </div>
+                <div class="avaliacao">
+                    <img src="img/clientes/aline.jpeg" alt="Cliente 6" class="avatar" />
+                    <p class="comentario">"Experiência maravilhosa, voltarei sempre."</p>
+                    <p class="nome">Aline Souza</p>
+                </div>
+            </div>
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+
+        <form id="form-avaliacao" class="form-avaliacao">
+            <h3>Deixe sua avaliação</h3>
+            <input type="text" id="nome" placeholder="Seu nome" required />
+            <textarea id="comentario" placeholder="Escreva seu comentário..." required></textarea>
+            <input type="file" id="foto" accept="image/*" />
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </section>
+
+
+
+
 
     <script defer src="js/script.js"></script>
 

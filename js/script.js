@@ -70,3 +70,51 @@ document.addEventListener("DOMContentLoaded", function () {
       galeria.classList.add("reveal");
     }
   });
+
+
+  const slider = document.querySelector(".slider");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+let currentSlide = 0;
+
+function updateSlider() {
+  const slideWidth = slider.clientWidth;
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slider.children.length;
+  updateSlider();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
+  updateSlider();
+}
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+setInterval(nextSlide, 5000); // troca automática
+
+const form = document.getElementById("form-avaliacao");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const comentario = document.getElementById("comentario").value;
+  const foto = document.getElementById("foto").files[0];
+  const fotoURL = foto ? URL.createObjectURL(foto) : "img/perfil-default.jpg";
+
+  const novoSlide = document.createElement("div");
+  novoSlide.classList.add("avaliacao");
+
+  novoSlide.innerHTML = `
+    <img src="${fotoURL}" class="avatar" />
+    <p class="comentario">"${comentario}"</p>
+    <p class="nome">${nome}</p>
+  `;
+
+  slider.appendChild(novoSlide);
+  form.reset();
+});
