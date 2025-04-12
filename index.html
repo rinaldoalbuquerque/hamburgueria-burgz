@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burgz - Hamburgueria Artesanal</title>
+
+    <script defer src="js/script.js"></script>
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="estilos/style.css" />
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="img/logo-burgz-transparencia.png" alt="Logo Burgz" />
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>O Sabor da Revolução Burger</h1>
+                <p>Hambúrgueres artesanais feitos com paixão e ingredientes selecionados.</p>
+                <a href="#cardapio" class="btn">Ver Cardápio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-container">
+            <div class="sobre-img">
+                <img src="img/chef-preparando.jpg" alt="Foto da equipe da Burgz">
+            </div>
+            <div class="sobre-conteudo">
+                <h2>Sobre a Burgz</h2>
+                <p>
+                    Na <strong>Burgz</strong>, cada hambúrguer é uma experiência. Utilizamos ingredientes frescos,
+                    carnes selecionadas e molhos artesanais para entregar o melhor sabor da cidade. Aqui, a paixão pela
+                    comida se transforma em arte!
+                </p>
+                <div class="redes-sociais">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <h2>Cardápio</h2>
+
+            <!-- Filtros de categoria -->
+            <div class="filtros">
+                <button class="filtro ativo" data-categoria="hamburgueres">Hambúrgueres</button>
+                <button class="filtro" data-categoria="bebidas">Bebidas</button>
+                <button class="filtro" data-categoria="porcoes">Porções</button>
+            </div>
+
+            <!-- Lista de itens -->
+            <div class="lista-itens">
+
+                <!-- HAMBÚRGUERES - CARNE -->
+                <div class="item hamburgueres carne ativo">
+                    <img src="img/hamburguers-carne/bacon -classico.png" alt="Clássico">
+                    <h3>Clássico</h3>
+                    <p>Pão brioche, carne 180g, queijo e molho especial.</p>
+                    <span class="preco">R$ 24,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item hamburgueres carne ativo">
+                    <img src="img/hamburguers-carne/duplo-smash.png" alt="Cheddar Bacon">
+                    <h3>Cheddar Bacon</h3>
+                    <p>Carne 180g, cheddar cremoso e bacon crocante.</p>
+                    <span class="preco">R$ 27,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item hamburgueres carne ativo">
+                    <img src="img/hamburguers-carne/bbq-supreme.png" alt="Barbecue">
+                    <h3>Barbecue</h3>
+                    <p>Carne 180g, cebola crispy e molho barbecue.</p>
+                    <span class="preco">R$ 26,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item hamburgueres carne ativo">
+                    <img src="img/hamburguers-carne/picante-texano.png" alt="Duplo Smash">
+                    <h3>Duplo Smash</h3>
+                    <p>2 carnes smash 100g, queijo e maionese da casa.</p>
+                    <span class="preco">R$ 29,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- HAMBÚRGUERES - FRANGO -->
+                <div class="item hamburgueres frango ativo">
+                    <img src="img/hamburgers-frango/crocante-da-casa.png" alt="Frango Crocante">
+                    <h3>Frango Crocante</h3>
+                    <p>Peito empanado, maionese e alface americana.</p>
+                    <span class="preco">R$ 22,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item hamburgueres frango ativo">
+                    <img src="img/hamburgers-frango/frango-bbq.png" alt="Frango BBQ">
+                    <h3>Frango BBQ</h3>
+                    <p>Peito grelhado, cheddar e molho barbecue.</p>
+                    <span class="preco">R$ 24,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- HAMBÚRGUERES - VEGETARIANO -->
+                <div class="item hamburgueres vegetariano ativo">
+                    <img src="img/hamburgers-vegetariano/veggie_classic.jpeg" alt="Veggie Clássico">
+                    <h3>Veggie Clássico</h3>
+                    <p>Burguer de grão-de-bico, salada e molho verde.</p>
+                    <span class="preco">R$ 23,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item hamburgueres vegetariano ativo">
+                    <img src="img/hamburgers-vegetariano/caprese-burger.jpeg" alt="Veggie Especial">
+                    <h3>Veggie Especial</h3>
+                    <p>Hambúrguer de lentilha, queijo vegano e tomate.</p>
+                    <span class="preco">R$ 25,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- BEBIDAS - REFRIGERANTES -->
+                <div class="item bebidas refrigerantes">
+                    <img src="img/refrigerante/lata_coca_cola.jpeg" alt="Coca-Cola">
+                    <h3>Coca-Cola Lata</h3>
+                    <p>350ml gelada</p>
+                    <span class="preco">R$ 6,00</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item bebidas refrigerantes">
+                    <img src="img/refrigerante/lata-guarana.png" alt="Guaraná">
+                    <h3>Guaraná Antártica</h3>
+                    <p>350ml gelada</p>
+                    <span class="preco">R$ 5,50</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- BEBIDAS - SUCOS -->
+                <div class="item bebidas sucos">
+                    <img src="img/sucos/suco-laranja.jpeg" alt="Suco Natural">
+                    <h3>Suco de Laranja</h3>
+                    <p>Natural, sem açúcar</p>
+                    <span class="preco">R$ 7,00</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item bebidas sucos">
+                    <img src="img/sucos/suco-uva.jpeg" alt="Suco Detox">
+                    <h3>Suco Detox</h3>
+                    <p>Couve, limão e hortelã</p>
+                    <span class="preco">R$ 8,00</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- PORÇÕES - FRITAS -->
+                <div class="item porcoes fritas">
+                    <img src="img/porção-de-fritas/porcao-batatas_fritas.jpeg" alt="Fritas">
+                    <h3>Batata Frita</h3>
+                    <p>Porção média com sal e molho.</p>
+                    <span class="preco">R$ 14,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item porcoes fritas">
+                    <img src="img/porção-de-fritas/batata_frita_cheddar_bacon.jpeg" alt="Fritas com Cheddar e Bacon">
+                    <h3>Fritas Cheddar & Bacon</h3>
+                    <p>Com cheddar cremoso e bacon crocante.</p>
+                    <span class="preco">R$ 19,90</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <!-- PORÇÕES - ESPECIAIS -->
+                <div class="item porcoes especiais">
+                    <img src="img/combo-familia/aneis-de-cebola.jpeg" alt="Onion Rings">
+                    <h3>Onion Rings</h3>
+                    <p>Anéis de cebola empanados.</p>
+                    <span class="preco">R$ 16,00</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+                <div class="item porcoes especiais">
+                    <img src="img/combo-familia/empanados.jpeg" alt="Nuggets">
+                    <h3>Nuggets</h3>
+                    <p>Porção com 8 unidades.</p>
+                    <span class="preco">R$ 17,00</span>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- GALERIA -->
+    <section class="galeria" id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria-grid">
+          <!-- Imagens da galeria -->
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/fachada-burgz.jpeg" alt="Pessoas no ambiente" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/ambiente-externo.jpg" alt="Pessoas no ambiente" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/ambiente-externo.jpg" alt=" ambiente externo do restaurante" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/garcon-servindo.jpg" alt=" agarçon servindo a mesa" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/homem-com-hamburguer.jpeg" alt="Pessoas no ambiente" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/clientes-burgz.jpeg" alt="Pessoas no ambiente" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/ambiente-com-pessoas.jpg" alt="Pessoas no ambiente" />
+          </div>
+          <div class="galeria-item">
+            <img src="img/imagens-galeria/hamburger-na-nesa.jpg" alt="hamburguer sobre a mesa" />
+          </div>
+        </div>
+      
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+          <img src="" alt="Imagem ampliada" />
+        </div>
+      </section>
+      
+      
+
+    <script defer src="js/script.js"></script>
+
+
+</body>
+
+</html>
