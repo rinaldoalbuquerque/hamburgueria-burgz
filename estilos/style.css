@@ -158,9 +158,10 @@ body {
 }
 
 .sobre-img img {
+    height: 100%;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.26);
 }
 
 .sobre-conteudo {
@@ -182,6 +183,7 @@ body {
 .redes-sociais {
     display: flex;
     gap: 1.5rem;
+
 }
 
 .redes-sociais a {
@@ -415,49 +417,51 @@ body {
     display: flex;
 }
 
+/* ===== AVALIAÇÕES ===== */
+
 .avaliacoes {
     padding: 60px 20px;
     text-align: center;
     background-color: #f9f9f9;
-  }
-  
-  .slider-container {
+}
+
+.slider-container {
     position: relative;
     overflow: hidden;
     max-width: 900px;
     margin: 0 auto 40px;
-  }
-  
-  .slider {
+}
+
+.slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .avaliacao {
+}
+
+.avaliacao {
     flex: 0 0 100%;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  .avatar {
+}
+
+.avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  .comentario {
+}
+
+.comentario {
     font-style: italic;
     margin: 10px 0;
-  }
-  
-  .nome {
+}
+
+.nome {
     font-weight: bold;
-  }
-  
-  #prev,
-  #next {
+}
+
+#prev,
+#next {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
@@ -467,33 +471,33 @@ body {
     cursor: pointer;
     color: #333;
     z-index: 2;
-  }
-  
-  #prev {
+}
+
+#prev {
     left: 10px;
-  }
-  
-  #next {
+}
+
+#next {
     right: 10px;
-  }
-  
-  .form-avaliacao {
+}
+
+.form-avaliacao {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  .form-avaliacao input[type="text"],
-  .form-avaliacao textarea,
-  .form-avaliacao input[type="file"] {
+}
+
+.form-avaliacao input[type="text"],
+.form-avaliacao textarea,
+.form-avaliacao input[type="file"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
-  }
-  
-  .form-avaliacao button {
+}
+
+.form-avaliacao button {
     padding: 12px;
     border: none;
     background-color: #ff4e00;
@@ -501,6 +505,196 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 6px;
+}
+
+.form-avaliacao button:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* ===== CONTATO ===== */
+
+/* CONTATO */
+.contato {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contato-form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contato-form button {
+    padding: 12px;
+    border: none;
+    background-color: #d62828;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: #b71c1c;
+}
+
+.mapa-box {
+    flex: 1 1 300px;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociais a {
+    color: #d62828;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #111;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 100px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #d62828;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes a {
+    color: #fff;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: var(--cor-primaria-light);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    text-decoration: none;
   }
   
+  .whatsapp-button.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe5b;
+    transform: scale(1.1);
+  }
   

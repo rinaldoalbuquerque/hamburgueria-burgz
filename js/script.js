@@ -118,3 +118,16 @@ form.addEventListener("submit", (e) => {
   slider.appendChild(novoSlide);
   form.reset();
 });
+
+
+
+  const whatsappBtn = document.querySelector('.whatsapp-button');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      whatsappBtn.classList.add('show');
+    } else {
+      whatsappBtn.classList.remove('show');
+    }
+  });
+
