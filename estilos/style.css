@@ -262,6 +262,13 @@ body {
     transform: translateY(0);
 }
 
+
+.item.ativo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: rgb(250, 193, 160) ;
+}
+
 .item img {
     width: 100%;
     border-radius: 12px;
@@ -686,15 +693,14 @@ body {
     transform: translateY(20px);
     transition: all 0.4s ease;
     text-decoration: none;
-  }
-  
-  .whatsapp-button.show {
+}
+
+.whatsapp-button.show {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .whatsapp-button:hover {
+}
+
+.whatsapp-button:hover {
     background-color: #1ebe5b;
     transform: scale(1.1);
-  }
-  
+}
