@@ -1,27 +1,3 @@
-// Configuração do Firebase
-
-
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDXIXhstrdOl2lNaKe3cH9xnUjW4Qz7n0A",
-    authDomain: "burgz-site.firebaseapp.com",
-    projectId: "burgz-site",
-    storageBucket: "burgz-site.firebasestorage.app",
-    messagingSenderId: "245709195826",
-    appId: "1:245709195826:web:4b2c7a49d0c6fd2c8f4a2b"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-
-
-
-//********************/
 const toggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
 const navLinks = document.querySelectorAll('.nav-list a');
